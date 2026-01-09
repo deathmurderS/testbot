@@ -1,0 +1,27 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f4f6;
+}
+
+.slide-container {
+    aspect-ratio: 16 / 9;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.active-tab {
+    border-bottom: 4px solid #1e40af;
+    color: #1e40af;
+}
+
+.chat-bubble-user {
+    background-color: #1e40af;
+    color: white;
+    border-radius: 18px 18px 0 18px;
+}
+
+.chat-bubble-bot {
+    background-color: #e5e7eb;
+    color: #1f2937;
+    border-radius: 18px 18px 18px 0;
+}
