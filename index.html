@@ -83,10 +83,21 @@
                 </div>
             </div>
 
-            <form id="chat-form" class="p-4 bg-white border-t border-gray-200 flex space-x-2">
-                <input type="text" id="user-input" placeholder="Ketik pertanyaan Anda di sini..." class="flex-grow p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-                <button type="submit" class="bg-blue-800 text-white px-6 py-2 rounded-lg font-bold hover:bg-blue-700 transition">Kirim</button>
-            </form>
+            <form id="chat-form" onsubmit="return false;">
+    <input 
+        type="text" 
+        id="user-input" 
+        placeholder="Ketik pertanyaan Anda di sini..."
+        class="flex-1 p-3 border rounded-lg"
+    >
+    <button 
+        type="submit" 
+        id="send-button"
+        class="px-6 py-3 bg-blue-600 text-white rounded-lg"
+    >
+        Kirim
+    </button>
+</form>
         </section>
 
         <!-- SECTION: QUIZ -->
