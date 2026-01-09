@@ -26,7 +26,7 @@ chatForm.addEventListener('submit', async (e) => {
     if (!text) return false; // Return false untuk extra safety
     
     // Validasi API Key
-    if (!apiKey || apiKey === "PASTE_YOUR_GEMINI_API_KEY_HERE" || !apiKey.startsWith("AIzaSy")) {
+    if (!apiKey || apiKey === "AIzaSyAT6GA4L7Rjm0MBmAUGOQy1OeLKBitwB1w" || !apiKey.startsWith("AIzaSy")) {
         addMessage("❌ ERROR: API Key belum diisi atau tidak valid!", 'bot text-red-500');
         return false;
     }
