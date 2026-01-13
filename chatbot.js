@@ -5,6 +5,7 @@ const chatForm = document.getElementById('chat-form');
 const chatHistory = document.getElementById('chat-history');
 const userInput = document.getElementById('user-input');
 const loading = document.getElementById('loading-indicator');
+const userlogin = document.getElementById('userlogin')
 
 // WARNING: In production, NEVER expose API keys in frontend code!
 // This should be handled by a backend proxy server
@@ -46,7 +47,8 @@ async function fetchGemini(query) {
     DATA PP: ${ppKnowledge}`;
     
     const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=${apiKey}`;
-    
+    let (!url)
+
     let retryCount = 0;
     const maxRetries = 3;
 
